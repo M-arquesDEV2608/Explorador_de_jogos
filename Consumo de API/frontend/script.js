@@ -131,7 +131,7 @@ async function buscarjogo(url) {
 // ==============================
 
 
-// função que busca um cachorro aleatório
+// função que busca um jogo aleatório
 function jogoAleatorio() {
 
     // chama a função principal
@@ -140,7 +140,7 @@ function jogoAleatorio() {
 }
 
 
-// função que busca cachorro por raça
+// função que busca jogo por gênero
 function buscarPorgenero() {
 
     // pega o texto digitado no input
@@ -150,7 +150,7 @@ function buscarPorgenero() {
     if (!genero) {
 
         // se não digitou, mostra alerta
-        alert("Digite um !");
+        alert("Digite um gênero!");
 
         // interrompe a função
         return;
@@ -175,8 +175,8 @@ randomBtn.addEventListener("click", jogoAleatorio);
 searchBtn.addEventListener("click", buscarPorgenero);
 
 
-// quando clicar na imagem do cachorro
-// carrega outro cachorro aleatório
+// quando clicar na imagem do jogo
+// carrega outro jogo aleatório
 gamImage.addEventListener("click", jogoAleatorio);
 
 
@@ -186,7 +186,7 @@ breedInput.addEventListener("keypress", (event) => {
     // verifica se a tecla pressionada foi Enter
     if (event.key === "Enter") {
 
-        // executa a busca por raça
+        // executa a busca por gênero
         buscarPorgenero();
     }
 
@@ -199,5 +199,5 @@ breedInput.addEventListener("keypress", (event) => {
 
 
 // assim que a página abre
-// já busca um cachorro aleatório
+// já busca um jogo aleatório
 jogoAleatorio();
